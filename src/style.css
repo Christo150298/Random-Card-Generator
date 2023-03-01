@@ -5,10 +5,10 @@ body {
 }
 
 .card {
-  height: 270px;
+  height: 250px;
   width: 200px;
   border-radius: 10px;
-  box-shadow: 5px 5px;
+  box-shadow: 3px 3px;
   border: 2px solid black;
   position: center;
   margin-top: 15%;
