@@ -1,7 +1,11 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
 
 body {
+  width: 100%;
+  min-height: 100vh;
+  display: grid;
   background: green;
+  place-items: center;
 }
 
 .card {
@@ -10,6 +14,4 @@ body {
   border-radius: 10px;
   box-shadow: 3px 3px;
   border: 2px solid black;
-  position: center;
-  margin-top: 15%;
 }

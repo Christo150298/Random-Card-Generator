@@ -6,35 +6,12 @@ import "./assets/img/rigo-baby.jpg";
 import "./assets/img/4geeks.ico";
 
 window.onload = () => {
-  function randomCard() {
-    const values = [
-      "2",
-      "3",
-      "4",
-      "5",
-      "6",
-      "7",
-      "8",
-      "9",
-      "10",
-      "J",
-      "Q",
-      "K"
-    ];
-    const suits = ["Hearts", "Diamonds", "Spades", "Clubs"];
-    const cards = [];
-    for (let a = 0; s < suits.length; s++) {
-      for (let b = 0; v < values.length; v++) {
-        const value = values[b];
-        const suit = suits[a];
-        cards.push({ value, suit });
-      }
-    }
-    return cards;
-  }
-  document.querySelector(".card").classList.add("heart");
-  setTimeout(() => {
-    document.querySelector(".card").classList.remove("heart");
-    document.querySelector(".card").classList.add("spade");
-  }, 1000);
+  document.getElementById("number");
+  let randomCard = () => {
+    let values = ["2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"];
+    let randomIndex = Math.floor(Math.random() * values.length);
+    console.log(values[randomIndex]);
+  };
+  let intervalo = setInterval(randomCard, 2500);
+  clearInterval(intervalo);
 };
