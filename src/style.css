@@ -4,14 +4,41 @@ body {
   width: 100%;
   min-height: 100vh;
   display: grid;
-  background: green;
   place-items: center;
+  background-color: green;
+}
+.red {
+  color: red;
+}
+
+#icono1 {
+  font-size: 30px;
+  margin-left: 5px;
+}
+
+#valor {
+  font-size: 60px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+#icono2 {
+  font-size: 30px;
+  float: right;
+  transform: rotate(180deg);
+  margin-top: 15px;
+  margin-right: 5px;
 }
 
 .card {
-  height: 250px;
-  width: 200px;
+  background-color: white;
+  height: 200px;
+  width: 150px;
   border-radius: 10px;
   box-shadow: 3px 3px;
   border: 2px solid black;
+}
+button {
+  margin-top: 20px;
+  width: 150px;
 }
